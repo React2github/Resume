@@ -1,0 +1,54 @@
+* {
+margin: 0px;
+}
+
+#hero {
+ background-color: wheat;  
+ background-image: url("images/web.jpg"); 
+ background-position:center ;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#hero h1 {
+display: flex;
+justify-content: center;
+padding-top: 5px;
+}
+
+#main-info {
+display: flex;
+justify-content: center;
+}
+
+#main-info img {
+border-radius: 20%;
+padding-bottom: 20px;
+}
+
+#list {
+background-color: khaki;
+padding: 10px;
+}
+
+ #list li {
+display: inline;
+padding: 5px;
+} 
+
+ #list h2 {
+display: flex;
+justify-content: center; 
+} 
+
+
+#list2 {
+background-color: cornsilk;
+padding: 10px;
+}
+
+#list2 h2 {
+display: flex;
+justify-content: center;
+}
+
