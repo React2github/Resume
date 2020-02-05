@@ -1,5 +1,6 @@
 * {
 margin: 0px;
+font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 #hero {
@@ -25,6 +26,16 @@ justify-content: center;
 border-radius: 20%;
 padding-bottom: 20px;
 }
+
+
+.table td {
+display: inline;
+}
+
+ .table tr:nth-child(even) {
+background-color: lightgray;
+} 
+
 
 #list {
 background-color: khaki;
