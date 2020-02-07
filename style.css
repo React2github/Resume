@@ -28,9 +28,6 @@ padding-bottom: 20px;
 }
 
 
-.table td {
-display: inline;
-}
 
  .table tr:nth-child(even) {
 background-color: lightgray;
