@@ -27,7 +27,9 @@ border-radius: 20%;
 padding-bottom: 20px;
 }
 
-
+.table {
+padding: 10px;
+}
 
  .table tr:nth-child(even) {
 background-color: khaki;
@@ -58,5 +60,17 @@ padding: 10px;
 #list2 h2 {
 display: flex;
 justify-content: center;
+}
+
+#list4 {
+background-color: cornsilk;
+padding: 40px;
+text-align: center;
+}
+
+#list4 h4 {
+display: flex;
+justify-content: center;
+padding-bottom: 10px;
 }
 
