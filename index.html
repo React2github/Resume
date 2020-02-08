@@ -1,35 +1,78 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="js/jquery.js"></script>
+    <script>
+      $( document ).ready(function(){
+
+        $('#button').click(function(){
+          $('.words').fadeIn(2000);
+        });
+
+        $('#button2').click(function(){
+          $('.words').fadeIn(2000);
+        });    
+        
+        $('#over').click(function(){
+          $('#list4').css('background-color', 'red');
+        })
+    
+      });
+    </script>
+     <style>
+       .words {
+         display: none;
+       }
+       .words2 {
+         display: none;
+       }
+       #over {
+         background-color: aqua;
+         padding:10px;
+         border-radius: 20%;
+
+     </style>
   </head>
     <body>
       <div id="hero"> 
-            <h1>Abdella Abdushukur</h1>
-          <div id="main-info">
-            <img src="images/Neo.jpg" />
-            <a href="https://github.com/React2github" target="_blank"> 
-            <img src="images/linkedin.png" width=100px height=100px /></a>
-          </div>
       </div>
+
+      <div id="navbar">
+        <ul>
+           <a href="#hero"><li>Home</li></a>
+           <a href="#list"><li>About</li></a>
+           <a href="#list3"><li>Projects</li></a>
+        </ul>
+      </div>
+
         <div id="list">
             <h2>Projects</h2>
             <ul>
-               <a href="https://github.com/React2github/html101/blob/master/example1.html" target="_blank"><li>  Example 1 </li></a>
-               <a href="https://github.com/React2github/html101/blob/master/example2.html" target="_blank"><li>  Example 2 </li></a>
-               <a href="https://github.com/React2github/html101/blob/master/example3.html" target="_blank"><li>  Example 3 </li></a>
-               <a href="https://github.com/React2github/html101/blob/master/example4.html" target="_blank"><li>  Example 4 </li></a>
-               <a href="https://github.com/React2github/html101/blob/master/example5.html" target="_blank"><li>  Example 5 </li></a>
-               <a href="https://github.com/React2github/html101/blob/master/example6.html" target="_blank"><li>  Example 6 </li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example1.html" target="_blank"><li>Example 1</li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example2.html" target="_blank"><li>Example 2</li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example3.html" target="_blank"><li>Example 3</li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example4.html" target="_blank"><li>Example 4</li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example5.html" target="_blank"><li>Example 5</li></a>
+               <a href="https://github.com/React2github/html101/blob/master/example6.html" target="_blank"><li>Example 6</li></a>
             </ul>
           </div>
       <div id="list2">
-            <h2>Assignments</h2>
+            <h2 id='button'>Assignments</h2>
             <ol>
-                <li>Create software company to beat IBM</li>
-                <li>Call it Macrosoft</li>
-                <li>Be a billionaire</li>
+                <li><p class="words" >Create software company to beat IBM</p></li>
+                <li><p class="words">Call it Macrosoft</p></li>
+                <li><p class="words">Be a billionaire</p></li>
             </ol>
       </div>
+      <div id="list25">
+        <h2 id='button2'>Extra Credit</h2>
+        <ol>
+            <li><p class="words">Create script language</p></li>
+            <li><p class="words">Hack WorldFoodBank</p></li>
+            <li><p class="words">Everybody eats</p></li>
+        </ol>
+  </div>
       <div id="list3">
         <table  class="table" style="width:100%">
           <caption><b>Additional Information</b></caption>
@@ -56,12 +99,33 @@
         </table>
       </div>
       
+      <div id="list35">
+        <h4>Newsletter Signup</h4>
+        <p>Here is where you can follow our progress</p>
+        <p>All you need to do is give us your information.</p>
+        <p>We won't sell it. But we might loan it out</p>
+        <p>I mean... come on. You kinda owe us</p>
+    </div>
+
       <div id="list4">
           <h4>Newsletter Signup</h4>
-          <p>Here is where you can follow our progress </p>
-          <p> All you need to do is give us your information </p>
-          <p> we won't sell it. But we might loan it out </p>
-           <p>I mean... come on. You kinda owe us </p>
+          <p>Here is where you can follow our progress</p>
+          <p>All you need to do is give us your information.</p>
+          <p>We won't sell it. But we might loan it out</p>
+          <p>I mean... come on. You kinda owe us</p>
+          <button id="over" >Okay!</button>
       </div>
+
+
+      <div id="bottom">
+            <div id="social"><p>Social Media</p>
+                <a href="https://github.com/React2github" target="_blank">
+                <img src="images/linkedin.png" width='50px' height="50px" /></a></div>
+      </div>
+
+      <div id="copy">
+        <footer>Copyright &copy Abdella Shukur LLC</footer>
+      </div>
+        </div>
     </body>
 </html>
